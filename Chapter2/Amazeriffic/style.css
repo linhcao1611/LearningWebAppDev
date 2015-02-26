@@ -1,0 +1,105 @@
+
+
+/* 1. Select the <h1> element.*/
+h1 {
+color: red;
+}
+
+
+/* 2. Select the <h2> element by its class. */
+.important{
+	color: red;
+}
+
+/* 3. Select all of the relevant paragraphs.  */
+.relevant {
+	color: red;
+}
+
+
+/* 4. Select the first paragraph of the relevant paragraphs. */
+p:first-child{
+	color: red;
+}
+
+
+/* 5. Select the third paragraph of the relevant paragraphs. */
+p:nth-of-type(3)
+{
+	color: red;
+}
+
+
+/* 6. Select the seventh relevant paragraph. */
+p:nth-child(7){
+	color: red;
+}
+
+/* 7. Select all of the paragraphs on the page.  */
+p{
+	color: red;
+}
+
+/* 8. Select only the random, unattached paragraph. */
+p:only-of-type{
+	color: red;
+}
+
+/* 9. Select all of the paragraphs with the a class. */
+.a{
+	coolr: red;
+}
+
+/* 10. Select only the relevant paragraphs with the a class. */
+.relevant .a{
+	color: red;
+}
+
+/* 11. Select the second and fourth paragraphs (HINT: use a comma).  */
+p:nth-child(2), p:nth-child(4){
+	color: red;
+}
+
+/* Additional rules */
+html{
+	
+	width: 80%;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+
+}
+
+body{
+	color: #555753;
+	background-color: white;
+	padding: 1em;
+
+
+}
+
+header{
+	height: 5em;
+}
+
+header h1{
+	float: left;
+}
+
+header nav{
+	float: right;
+}
+
+footer{
+	height: 15em;
+	;
+}
+
+footer .contact{
+	float: left;
+}
+
+footer .sitemap{
+	float: right;
+	padding-right: 2em;
+
+}
