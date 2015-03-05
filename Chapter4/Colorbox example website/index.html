@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+			});
+		</script> 
+	</head>
+	<body>
+		<h1>Colorbox Demonstration</h1>
+
+		
+		<h2>Slideshow</h2>
+		<p><a class="group4"  href="images/1.jpg" title="Screenshot #1">Screenshot #1</a></p>
+		<p><a class="group4"  href="images/2.jpg" title="Screenshot #2">Screenshot #2</a></p>
+		<p><a class="group4"  href="images/3.jpg" title="Screenshot #3">Screenshot #3</a></p>
+		<p><a class="group4"  href="images/4.jpg" title="Screenshot #4">Screenshot #4</a></p>
+		
+
+		
+	
+
+
+
+
+	</body>
+</html>
