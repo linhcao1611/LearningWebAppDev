@@ -5,6 +5,8 @@ var main = function () {
                  "Answer emails",
                  "Take Gracie to the park",
                  "Finish writing this book"];
+	
+	var screenshots=["1","2","3","4"];
 
     $(".tabs a span").toArray().forEach(function (element) {
         var $element = $(element);
@@ -48,9 +50,22 @@ var main = function () {
                 $content = $("<div>").append($input).append($button);
                /* Alternatively append() allows multiple arguments so the above
                 can be done with $content = $("<div>").append($input, $button); */
-            }
-
+            } else if($element.parent().is(":nth-child(4)")){
+				// display 4 screenshots
+				$content=$("<ul>");
+				$str1="images/";
+				$str2=".jpg";
+				$str3="Screenshot #";
+				
+				screenshots.forEach(function (todo) {
+					$content.append($("<p>"));
+					$content.append($("<a>").addClass("group4").attr("href",$str1 + todo+$str2).text($str3 +todo));										
+				});		
+				
+			}
+			
             $("main .content").append($content);
+			$('a.group4').colorbox({  rel:'group4', slideshow:true });
 
             return false;
         });
