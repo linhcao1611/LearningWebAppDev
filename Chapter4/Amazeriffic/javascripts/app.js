@@ -53,9 +53,9 @@ var main = function () {
             } else if($element.parent().is(":nth-child(4)")){
 				// display 4 screenshots
 				$content=$("<ul>");
-				$str1="images/";
-				$str2=".jpg";
-				$str3="Screenshot #";
+				var $str1="images/";
+				var $str2=".jpg";
+				var $str3="Screenshot #";
 				
 				screenshots.forEach(function (todo) {
 					$content.append($("<p>"));
